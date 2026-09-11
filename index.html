@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLASS / INDEX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="topbar">
+  <a class="logo" href="#" onclick="resetAll()">CLASS<span>/</span>INDEX</a>
+  <div class="top-meta"><span>SEOUL · 2026</span><span id="liveCount"></span></div>
+</header>
+
+<main>
+  <section class="opening">
+    <div class="opening-copy">
+      <p class="kicker">A SMALL DATABASE OF US</p>
+      <h1>WHO<br><i>ARE</i><br>WE?</h1>
+    </div>
+    <div class="opening-note">
+      <span class="vertical">JS PROJECT STUDIO</span>
+      <p>이름 하나에서 시작해<br>취향과 일상의 좌표를<br>가볍게 탐색해보세요.</p>
+      <div class="scroll">SCROLL ↓</div>
+    </div>
+  </section>
+
+  <section class="explorer">
+    <aside class="rail">
+      <p>EXPLORE</p>
+      <div id="categoryTabs"></div>
+    </aside>
+
+    <div class="content">
+      <div class="active-head">
+        <div>
+          <span class="small-label">NOW VIEWING</span>
+          <h2 id="resultTitle">EVERYONE</h2>
+        </div>
+        <button class="reset" onclick="resetAll()">RESET ↺</button>
+      </div>
+
+      <div id="valueFilters" class="value-filters"></div>
+      <div id="cards" class="cards"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>DATA × PEOPLE × JAVASCRIPT</span>
+  <span>CLICK A CARD TO EXPLORE</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
